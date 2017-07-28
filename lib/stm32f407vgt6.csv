@@ -80,7 +80,7 @@ Pin,Text,Direction
 79,PC11,U
 80,PC12,U
 81,PD0,U
-82,PD10,U
+82,PD1,U
 83,PD2,U
 84,PD3,U
 85,PD4,U
@@ -96,6 +96,6 @@ Pin,Text,Direction
 95,PB8,U
 96,PB9,U
 97,PE0,U
-98,PE10,U
+98,PE1,U
 99,VSS,U
 100,VDD,U
