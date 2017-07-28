@@ -1,0 +1,259 @@
+EESchema Schematic File Version 2
+LIBS:stm32f407vgt6
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:bad-bb-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power U?
+U 1 1 597B2622
+P 5900 3800
+F 0 "U?" H 6350 5100 60  0000 C CNN
+F 1 "power" H 6400 3900 60  0000 C CNN
+F 2 "" H 6250 4300 60  0001 C CNN
+F 3 "" H 6250 4300 60  0001 C CNN
+	1    5900 3800
+	1    0    0    -1  
+$EndComp
+Text GLabel 2750 2650 0    60   Input ~ 0
+VDD
+$Comp
+L C C?
+U 1 1 597B2BF9
+P 4550 3250
+F 0 "C?" H 4575 3350 50  0000 L CNN
+F 1 "100nF" H 4575 3150 50  0000 L CNN
+F 2 "" H 4588 3100 50  0001 C CNN
+F 3 "" H 4550 3250 50  0001 C CNN
+	1    4550 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 597B2C25
+P 4550 3700
+F 0 "C?" H 4575 3800 50  0000 L CNN
+F 1 "100nF" H 4575 3600 50  0000 L CNN
+F 2 "" H 4588 3550 50  0001 C CNN
+F 3 "" H 4550 3700 50  0001 C CNN
+	1    4550 3700
+	1    0    0    -1  
+$EndComp
+Text Notes 3700 5250 0    60   ~ 0
+TODO:  Why 99th pin not connected?
+$Comp
+L GND #PWR?
+U 1 1 597B3B94
+P 5000 3500
+F 0 "#PWR?" H 5000 3250 50  0001 C CNN
+F 1 "GND" H 5000 3350 50  0000 C CNN
+F 2 "" H 5000 3500 50  0001 C CNN
+F 3 "" H 5000 3500 50  0001 C CNN
+	1    5000 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 2750 5750 2750
+Wire Wire Line
+	5750 2650 5750 3150
+Connection ~ 5750 2650
+Wire Wire Line
+	5750 2850 6100 2850
+Connection ~ 5750 2750
+Wire Wire Line
+	5750 2950 6100 2950
+Connection ~ 5750 2850
+Wire Wire Line
+	5750 3050 6100 3050
+Connection ~ 5750 2950
+Connection ~ 5750 3050
+Wire Wire Line
+	2750 2650 6100 2650
+Wire Wire Line
+	4150 3400 4150 3550
+Wire Wire Line
+	4550 3400 4550 3550
+Wire Wire Line
+	4150 3500 5000 3500
+Connection ~ 4150 3500
+Wire Wire Line
+	6100 3450 5300 3450
+Wire Wire Line
+	5300 3450 5300 3850
+Wire Wire Line
+	6100 3350 5550 3350
+Wire Wire Line
+	5550 3350 5550 3100
+Wire Wire Line
+	5550 3100 3850 3100
+Connection ~ 4550 3100
+Wire Wire Line
+	5300 3850 3250 3850
+Connection ~ 4550 3850
+$Comp
+L CP C?
+U 1 1 597B4655
+P 4150 3700
+F 0 "C?" H 4175 3800 50  0000 L CNN
+F 1 "1uF" H 4175 3600 50  0000 L CNN
+F 2 "" H 4188 3550 50  0001 C CNN
+F 3 "" H 4150 3700 50  0001 C CNN
+	1    4150 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L CP C?
+U 1 1 597B4785
+P 4150 3250
+F 0 "C?" H 4175 3350 50  0000 L CNN
+F 1 "1uF" H 4175 3150 50  0000 L CNN
+F 2 "" H 4188 3100 50  0001 C CNN
+F 3 "" H 4150 3250 50  0001 C CNN
+	1    4150 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 4150 3850
+Connection ~ 4550 3500
+Connection ~ 4150 3100
+$Comp
+L L_Core_Ferrite L?
+U 1 1 597B51D2
+P 3100 3850
+F 0 "L?" V 3050 3850 50  0000 C CNN
+F 1 "L_Fer_Bead" V 3250 3800 50  0000 C CNN
+F 2 "" H 3100 3850 50  0001 C CNN
+F 3 "" H 3100 3850 50  0001 C CNN
+	1    3100 3850
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2900 2650
+$Comp
+L R R?
+U 1 1 597B5C6B
+P 3700 3100
+F 0 "R?" V 3780 3100 50  0000 C CNN
+F 1 "R" V 3700 3100 50  0000 C CNN
+F 2 "" V 3630 3100 50  0001 C CNN
+F 3 "" H 3700 3100 50  0001 C CNN
+	1    3700 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2900 2650 2900 3850
+Wire Wire Line
+	2900 3850 2950 3850
+Wire Wire Line
+	3550 3100 3450 3100
+Wire Wire Line
+	3450 3100 3450 3850
+Connection ~ 3450 3850
+Connection ~ 3450 3100
+$Comp
+L C C?
+U 1 1 597B6702
+P 7450 3850
+F 0 "C?" H 7475 3950 50  0000 L CNN
+F 1 "2.2uF" H 7475 3750 50  0000 L CNN
+F 2 "" H 7488 3700 50  0001 C CNN
+F 3 "" H 7450 3850 50  0001 C CNN
+	1    7450 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 597B674B
+P 7800 3850
+F 0 "C?" H 7825 3950 50  0000 L CNN
+F 1 "2.2uF" H 7825 3750 50  0000 L CNN
+F 2 "" H 7838 3700 50  0001 C CNN
+F 3 "" H 7800 3850 50  0001 C CNN
+	1    7800 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 597B67EC
+P 7450 4200
+F 0 "#PWR?" H 7450 3950 50  0001 C CNN
+F 1 "GND" H 7450 4050 50  0000 C CNN
+F 2 "" H 7450 4200 50  0001 C CNN
+F 3 "" H 7450 4200 50  0001 C CNN
+	1    7450 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 4000 7450 4200
+Wire Wire Line
+	7800 4000 7800 4100
+Wire Wire Line
+	7800 4100 7450 4100
+Connection ~ 7450 4100
+Wire Wire Line
+	7200 3550 7450 3550
+Wire Wire Line
+	7450 3550 7450 3700
+Wire Wire Line
+	7200 3450 7800 3450
+Wire Wire Line
+	7800 3450 7800 3700
+Wire Wire Line
+	5750 3150 6100 3150
+$Comp
+L GND #PWR?
+U 1 1 597B7593
+P 7500 3050
+F 0 "#PWR?" H 7500 2800 50  0001 C CNN
+F 1 "GND" H 7500 2900 50  0000 C CNN
+F 2 "" H 7500 3050 50  0001 C CNN
+F 3 "" H 7500 3050 50  0001 C CNN
+	1    7500 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7200 2650 7200 3350
+Connection ~ 7200 2750
+Wire Wire Line
+	7200 3050 7500 3050
+Connection ~ 7200 2850
+Connection ~ 7200 3050
+$EndSCHEMATC
